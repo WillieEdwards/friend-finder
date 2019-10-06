@@ -16,19 +16,19 @@ module.exports = function(app) {
         }
         
         var bestFriend = 0;
-        var minimumDiff = 40;
+        var minimumDifference = 40;
         
         for(var i = 0; i < friends.length; i++) {
 
-            var totalDiff = 0;
+            var totalDifference = 0;
 
             for(var j = 0; j < friends[i].scores.length; j++) {
 
                 var difference = Math.abs(userInput.scores[j] - friends[i].scores[j]);
-                totalDiff += difference;
-            } if (totalDiff < minimumDiff) {
+                totalDifference += difference;
+            } if (totalDifference < minimumDifference) {
                 bestFriend = i;
-                minimumDiff = totalDiff;
+                minimumDifference = totalDifference;
             }
         }
         

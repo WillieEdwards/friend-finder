@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <title>FriendFinder</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Link static CSS -->
-    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Katibeh&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: url("http://www.pptbackgrounds.org/uploads/brick-seamless-orange-backgrounds-wallpapers.jpg");
+        }
+
+        h1 {
+            font-family: 'Katibeh', cursive;
+            font-size: 50px;
+        }
+
+        h2 {
+            font-family: 'Katibeh', cursive;
+            font-size: 40px;
+        }
+
+        .container {
+            color: #008111;
+            background-color: #ffffff;
+        }
+
+        .btn {
+            background-color: #008111;
+            border-color: #008111;
+        }
+
+        #results-modal {
+            text-align: center;
+        }
+
+        #match-img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 
 </head>
 
@@ -16,10 +51,10 @@
 
     <div class="container">
 
-        <h2>Survey Questions</h2>
+        <h1>Coolness Assessment</h1>
         <hr>
 
-        <h3><strong>About You</strong></h3>
+        <h2>About You</h2>
         <h4>Name (Required)</h4>
         <input type="text" id="name" class="form-control" required="">
 
@@ -30,7 +65,7 @@
 
         <h3><strong>Question 1</strong></h3>
         <div class="form-group">
-            <label for="q1">PLACE QUESTION HERE</label>
+            <label for="q1">You don't mind getting your hands dirty to get the job done.</label>
             <select class="form-control" id="q1" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -43,7 +78,8 @@
 
         <h3><strong>Question 2</strong></h3>
         <div class="form-group">
-            <label for="q2">PLACE QUESTION HERE</label>
+            <label for="q2">You think that everyone’s views should be respected regardless of whether they are supported
+                by facts or not.</label>
             <select class="form-control" id="q2" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -57,7 +93,7 @@
 
         <h3><strong>Question 3</strong></h3>
         <div class="form-group">
-            <label for="q3">PLACE QUESTION HERE</label>
+            <label for="q3">You think very highly of yourself.</label>
             <select class="form-control" id="q3" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -71,7 +107,7 @@
 
         <h3><strong>Question 4</strong></h3>
         <div class="form-group">
-            <label for="q4">PLACE QUESTION HERE</label>
+            <label for="q4">You usually prefer to get your revenge rather than forgive.</label>
             <select class="form-control" id="q4" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -85,7 +121,7 @@
 
         <h3><strong>Question 5</strong></h3>
         <div class="form-group">
-            <label for="q5">PLACE QUESTION HERE</label>
+            <label for="q5">You rarely do something just out of sheer curiosity.</label>
             <select class="form-control" id="q5" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -99,7 +135,7 @@
 
         <h3><strong>Question 6</strong></h3>
         <div class="form-group">
-            <label for="q6">PLACE QUESTION HERE</label>
+            <label for="q6">Your mind is always buzzing with unexplored ideas.</label>
             <select class="form-control" id="q6" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -113,7 +149,8 @@
 
         <h3><strong>Question 7</strong></h3>
         <div class="form-group">
-            <label for="q7">PLACE QUESTION HERE</label>
+            <label for="q7">You always consider how your actions might affect other people before doing
+                something.</label>
             <select class="form-control" id="q7" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -126,7 +163,7 @@
 
         <h3><strong>Question 8</strong></h3>
         <div class="form-group">
-            <label for="q8">PLACE QUESTION HERE</label>
+            <label for="q8">You find it easy to stay relaxed and focused even when there is some pressure.</label>
             <select class="form-control" id="q8" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -139,7 +176,7 @@
 
         <h3><strong>Question 9</strong></h3>
         <div class="form-group">
-            <label for="q9">PLACE QUESTION HERE</label>
+            <label for="q9">You rarely feel insecure.</label>
             <select class="form-control" id="q9" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -152,7 +189,7 @@
 
         <h3><strong>Question 10</strong></h3>
         <div class="form-group">
-            <label for="q10">PLACE QUESTION HERE</label>
+            <label for="q10">You are dedicated and focused on your goals.</label>
             <select class="form-control" id="q10" style="width: 170px">
                 <option value="empty">Select an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -172,14 +209,14 @@
             Submit</button>
 
         <hr>
-        <footer class="footer">
-            <div class="container">
-                <p><a href="/api/friends">API Friends List</a> | <a
-                        href="https://github.com/WillieEdwards/friend-finder">GitHub Repo</a></p>
-            </div>
-        </footer>
 
     </div>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a
+                    href="https://github.com/WillieEdwards/friend-finder">GitHub Repo</a></p>
+        </div>
+    </footer>
 
     <!-- Modal -->
     <div id="results-modal" class="modal fade" role="dialog">
@@ -250,7 +287,7 @@
                 };
 
                 // AJAX post the data to the friends API.
-                $.post(window.location.origin + "/api/friends", userData, function (data) {
+                $.post("/api/friends", userData, function (data) {
 
                     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
                     $("#match-name").text(data.name);
