@@ -1,6 +1,8 @@
 # FRIEND FINDER
 
-# Introduction
+# Introduction (*The Gang Builds a Dating App*)
+
+It looks like the gang is at it again! This time they have built South Philly's most exclusive app **(Paddy's Friend Finder)** to help find you a new best friend. It seems innocent enough, but what is they're real motive? There's only one way to find out...
 
 ## Live Link
 
@@ -35,3 +37,11 @@ https://paddys-friend-finder.herokuapp.com/
 **Visual Studio Code** - text editor
 
 **Node.js** - terminal
+
+# Demo
+
+Home Page Demo:
+![Home Page Demo](/friend-finder-home.gif)
+
+Survey Page Demo:
+![Submit Survey Demo](/friend-finder-survey.gif)
