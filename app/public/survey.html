@@ -8,48 +8,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Katibeh&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png"
-        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gSai0VhQK_uBwtX5xmv1fKRylQyTq_b_RwjqEYiTjgIGlIJx" />
+    <link href="https://fonts.googleapis.com/css?family=Kurale&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://webstockreview.net/images/clipart-rainbow-tiger-17.png" />
 
     <style>
         body {
             background: url("http://www.pptbackgrounds.org/uploads/brick-seamless-orange-backgrounds-wallpapers.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 100% 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         h1 {
-            font-family: 'Katibeh', cursive;
+            font-family: 'Kurale', serif;
+            font-weight: bold;
             font-size: 50px;
             text-align: center;
         }
 
         h2 {
-            font-family: 'Katibeh', cursive;
-            font-size: 40px;
+            font-family: 'Kurale', serif;
+            font-weight: bold;
+            font-size: 30px;
         }
 
-        h3 {
-            font-family: 'Katibeh', cursive;
+        h4 {
+            font-family: 'Kurale', serif;
+            font-weight: bold;
         }
 
         .container {
             width: 90%;
-            color: #00824c;
-            background-color: #ffffff;
+            color: #02681f;
+            background-color: rgba(220, 220, 220, 0.9);
         }
 
         .btn {
+            font-family: 'Kurale', serif;
             color: #ffffff;
-            background-color: #00824c;
-            border-color: #00824c;
+            background-color: #02681f;
+            border-color: #02681f;
             padding-top: 17px;
             padding-bottom: 17px;
         }
 
         .modal-title {
-            font-family: 'Katibeh', cursive;
-            font-size: 40px;
-            color: #00824c;
+            font-family: 'Kurale', serif;
+            font-size: 30px;
+            color: #02681f;
         }
 
         #results-modal {
@@ -57,9 +68,9 @@
         }
 
         #match-name {
-            font-family: 'Katibeh', cursive;
-            font-size: 40px;
-            color: #00824c;
+            font-family: 'Kurale', serif;
+            font-size: 30px;
+            color: #02681f;
         }
 
         #match-img {
@@ -68,7 +79,8 @@
         }
 
         #links {
-            font-size: 15px;
+            font-family: 'Kurale', serif;
+            font-size: 20px;
             text-align: right;
         }
     </style>
@@ -78,15 +90,15 @@
 <body>
 
     <div class="container">
-
+        <br>
+        <br>
         <h1>COOLNESS ASSESSMENT</h1>
         <hr>
-
         <h2>About You</h2>
-        <h3>Name (Required)</h3>
+        <h4>Name (Required)</h4>
         <input type="text" id="name" class="form-control" required="">
 
-        <h3>Link to Photo Image (Required)</h3>
+        <h4>Link to Photo Image (Required)</h4>
         <input type="text" id="photo" class="form-control" required="">
 
         <hr>
